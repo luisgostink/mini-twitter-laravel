@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('tweets', function () {
     return view('tweets.index');
 });
+
+Route::get('tweets/create', function () {
+    return view('tweets.create');
+});
+
+Route::get('tweets/show', function () {
+    return view('tweets.show');
+});
