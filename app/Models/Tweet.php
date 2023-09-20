@@ -11,10 +11,6 @@ class Tweet extends Model
 
     protected $table = 'tweets'; 
 
-    // $public 
-    // 
-    // 
-    // 
-
+    protected $guarded = []; 
 
 }

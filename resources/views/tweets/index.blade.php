@@ -1,3 +1,6 @@
-<div>
-  <h1>Here my tweets will be shown</h1>
-</div>
+    <div>
+      @foreach ($tweets as $tweet)
+          <p>{{ $tweet->title }}</p>
+          <p>{{ $tweet->text }}</p>
+      @endforeach
+    </div>
