@@ -22,4 +22,4 @@ Route::get('tweets', [TweetController::class, 'index']);
 
 Route::get('tweets/create', [TweetController::class, 'create']);
 
-Route::get('tweets/show', [TweetController::class, 'show']);
+Route::get('tweets/{id}', [TweetController::class, 'show']); 

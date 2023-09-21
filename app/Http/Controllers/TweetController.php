@@ -13,7 +13,7 @@ class TweetController extends Controller
         // Get tweets from the DataBase
         $tweets = Tweet::all(); 
 
-        // Send Data in the View
+        // Send Data from all tweets in the DB to the View
         return view('tweets.index', [
             'tweets' => $tweets
         ]);  
@@ -23,7 +23,10 @@ class TweetController extends Controller
         return view('tweets.create');
     }
 
-    public function show(){
-        return view('tweets.show');
+    public function show($id){
+        $tweet = Tweet::find($id); 
+        return view('tweets.show', [
+            'tweet'=> $tweet
+        ]);
     }
 }
