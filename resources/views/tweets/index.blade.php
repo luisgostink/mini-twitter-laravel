@@ -1,6 +1,11 @@
-    <div>
+   
+   
+   
+   
+   
+   <div class="tweet-container">
       @foreach ($tweets as $tweet)
-          <p>{{ $tweet->title }}</p>
+          <h3>{{ $tweet->title }}</h3>
           <p>{{ $tweet->text }}</p>
       @endforeach
     </div>

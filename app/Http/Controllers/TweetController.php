@@ -10,18 +10,17 @@ class TweetController extends Controller
 {
     public function index(){
 
-        // Get teets from the DataBase
+        // Get tweets from the DataBase
         $tweets = Tweet::all(); 
 
-
         // Send Data in the View
-        return view('tweets.index');  
+        return view('tweets.index', [
+            'tweets' => $tweets
+        ]);  
     }
 
     public function create(){
-        return view('tweets.create', [
-            'tweets'=> $tweets
-        ]);
+        return view('tweets.create');
     }
 
     public function show(){
