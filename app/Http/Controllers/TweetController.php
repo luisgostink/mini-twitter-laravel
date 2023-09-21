@@ -22,6 +22,27 @@ class TweetController extends Controller
     public function create(){
         return view('tweets.create');
     }
+    
+    // STORE TWEET
+
+    public function store(Request $request){
+        
+        // 1. Pulling the tweet to put it in the DB. 
+        $request->title;
+        $request->text;
+
+        Tweet::create([
+            "title" => $request['title'],
+            "text" => $request['text']
+        ]);
+
+
+
+        //2. redirect to index route 
+
+    }
+
+    // Show selected tweet, getting the ID from the database. 
 
     public function show($id){
         $tweet = Tweet::find($id); 

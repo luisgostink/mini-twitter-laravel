@@ -20,6 +20,10 @@ Route::get('/', function () {
 
 Route::get('tweets', [TweetController::class, 'index']);
 
-Route::get('tweets/create', [TweetController::class, 'create']);
+Route::get('tweets/create', [TweetController::class, 'create'])->name('tweets.create');
 
 Route::get('tweets/{id}', [TweetController::class, 'show']); 
+
+Route::post('tweets/store', [TweetController::class, 'store'])->name('tweets.store') ; 
+
+
