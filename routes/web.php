@@ -18,12 +18,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('tweets', [TweetController::class, 'index']);
+Route::get('tweets', [TweetController::class, 'index'])->name('feed'); 
 
 Route::get('tweets/create', [TweetController::class, 'create'])->name('tweets.create');
 
 Route::get('tweets/{id}', [TweetController::class, 'show']); 
 
-Route::post('tweets/store', [TweetController::class, 'store'])->name('tweets.store') ; 
+Route::post('tweets/store', [TweetController::class, 'store'])->name('tweets.store');
+
+Route::delete('tweets/{id}', [TweetController::class, 'destroy'])->name('tweets.destroy');
+
+
+
 
 

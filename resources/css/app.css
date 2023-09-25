@@ -50,9 +50,42 @@
 }
 
 h1 {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px; 
+    font-family: 'Inter', sans-serif; 
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: rgba(34, 34, 34, 1);
+    text-align: left;
+}
+
+.tweet-info {
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    background-color: rgba(34, 34, 34, 1);
+    color: #fff;
+    border-radius: 3px;
+    padding: 12px;
+    text-align: left;
+
+}
+
+.logo {
+    font-family: 'Inter', sans-serif; 
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: rgba(34, 34, 34, 1);
+    text-align: left;
+    width: 174px;
+    height: 29px;
+    top: 38px;
+    left: 156px;
+
 }
 
 form {
@@ -80,7 +113,7 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #36b95d;
+    background-color: rgba(34, 34, 34, 1);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -93,3 +126,33 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #18e254;
 }
+
+.feed-title {
+    text-align: left;
+    margin: 20px;
+}
+
+.feed-title, p {
+    font-family: 'Inter', sans-serif;
+    color: rgba(136, 136, 136, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-align: center;    
+}
+
+.feed-title, span {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: rgba(34, 34, 34, 1);
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0%, auto;
+
+}
+
+
+
