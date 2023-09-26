@@ -11,7 +11,8 @@ class TweetController extends Controller
     public function index(){
 
         // Get tweets from the DataBase
-        $tweets = Tweet::all(); 
+        $tweets = Tweet::all()->reverse(); 
+    
 
         // Send Data from all tweets in the DB to the View
         return view('tweets.index', [

@@ -23,7 +23,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <a href="{{ route('tweets.create') }}" class="btn btn-primary">+Tweet</a>
+            <a href="{{ route('feed') }}" class="btn btn tweets-btn">My Tweets</a>
+            <a href="{{ route('tweets.create') }}" class="createtweet">Create Tweet</a>
           </div>
         </div>
       </nav>

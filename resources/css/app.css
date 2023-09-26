@@ -1,7 +1,7 @@
   
   body {
         font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
+        background-color: rgba(249, 249, 249, 1);
         margin: 0;
         padding: 0;
     }
@@ -12,33 +12,85 @@
         margin-bottom: 30px; 
     }
 
+ 
+    .tweets-btn {
+        border-radius: 0%;
+        margin-right: 46px;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        border-bottom: 2px solid transparent; /* Start with a transparent border */
+        transition: border-bottom 0.3s; /* Add a transition for a smooth effect */
+
+    }
+
+    .tweets-btn:hover {
+        border-bottom: 2px solid rgba(34, 34, 34, 1); /* Change the border on hover */
+    }
+    .createtweet {
+        width: 161px;
+        height: 39px;
+        top: 33px;
+        left: 1195px;
+        padding: 10px 15px 10px 15px;
+        border-radius: 50px;
+        gap: 10px;
+        background-color:rgba(29, 155, 240, 1);
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+
+
+    }
+
   /* Style the tweet container */
     .tweet-container {
-      background-color: #f5f5f5;
-      border: 2px solid #ccc;
-      padding: 20px;
-      margin: 20px auto; /* Center the container horizontally */
-      max-width: 600px; 
+      background-color: rgba(255, 255, 255, 1);
+      border: 1px;
+      padding: 37px 66px 52px 89px;
+      margin: 8px auto; /* Center the container horizontally */
+      max-width: 760px; 
       display: inline-flexbox;  /* Make the container fit its content */
-      border-radius: 5px;
-      text-align: center;
+      border-radius: 8px;
+      text-align: left;
   }
 
   /* Style the tweet title */
   .tweet-container h3 {
       font-size: 18px;
       margin-bottom: 10px;
-      color: #333;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
+      color:rgba(34, 34, 34, 1);
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+  }
+
+  .date{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: rgba(136, 136, 136, 1);
+    text-align: right;
+    margin: 0; 
   }
 
   /* Style the tweet text */
   .tweet-container p {
-      font-size: 16px;
-      color: #666;
-      font-family: Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 24px;
+      color: rgba(68, 68, 68, 1);
+      font-family: 'Inter', sans-serif;
   }
+
+  .tweet-container {
+    line-height: 21.78px; 
+  }
+
+
 
   /* CREATE TWEET STYLE */
 
@@ -59,18 +111,19 @@ h1 {
     text-align: left;
 }
 
-.tweet-info {
-    font-family: 'Inter', sans-serif; 
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: -0.02em;
-    background-color: rgba(34, 34, 34, 1);
-    color: #fff;
-    border-radius: 3px;
-    padding: 12px;
+.view-more {
+    padding: 10px 15px 10px 15px; 
+    border-radius: 8px;
+    gap: 10px;
+    background-color:rgba(34, 34, 34, 1);
+    color:rgba(255, 255, 255, 1);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
     text-align: left;
 
+    
 }
 
 .logo {
@@ -85,16 +138,13 @@ h1 {
     height: 29px;
     top: 38px;
     left: 156px;
+    bottom: 37px; 
 
 }
 
 form {
-    max-width: 600px;
+    max-width: 760px;
     margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 label {
@@ -115,21 +165,12 @@ textarea {
 button[type="submit"] {
     background-color: rgba(34, 34, 34, 1);
     color: #fff;
-    padding: 10px 20px;
+    padding: 10 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold; 
-}
-
-button[type="submit"]:hover {
-    background-color: #18e254;
-}
-
-.feed-title {
-    text-align: left;
-    margin: 20px;
 }
 
 .feed-title, p {
@@ -139,8 +180,18 @@ button[type="submit"]:hover {
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0.05em;
-    text-align: center;    
+    text-align: left;
+    margin: 20px auto; /* Center the container horizontally */
+    max-width: 760px; 
+ 
 }
+
+.feed-title {
+    text-align: left;
+    margin-bottom: 81px;
+    max-width: 760px;
+}
+
 
 .feed-title, span {
     font-family: 'Inter', sans-serif;
@@ -149,7 +200,7 @@ button[type="submit"]:hover {
     font-weight: 700;
     line-height: 39px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     margin: 0%, auto;
 
 }
