@@ -23,7 +23,7 @@ class TweetController extends Controller
     public function create(){
         return view('tweets.create');
     }
-    
+   
     // STORE TWEET
 
     public function store(Request $request){
@@ -49,6 +49,19 @@ class TweetController extends Controller
 
     }
 
+ /*    // Edit Tweet = Get the tweet from the database and show it in the page. 
+    public function editTweet(){
+        dd('whatev');
+    
+        // Get tweet from the DB and saves it in the $tweet variable. 
+    $tweet = Tweet::find($id); 
+    $tweet->editTweet();
+
+    // Go back to the feed page. 
+    return redirect()->route('feed'); // Redirect to the tweets feed
+    }  */
+    
+
     // Show selected tweet, getting the ID from the database. 
     public function show($id){
         $tweet = Tweet::find($id); 
@@ -68,3 +81,4 @@ class TweetController extends Controller
     return redirect()->route('feed'); // Redirect to the tweets feed
     } 
 }
+

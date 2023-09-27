@@ -1,10 +1,10 @@
 @extends('layouts.app')
-@section ('title', 'new tweet')
+@section ('title', 'edit tweet')
 @section('content')
 
 <div>
    {{--action => route // method => POST--}}
-    <form action="/tweets/store" method="POST">
+    <form action="{{ route('tweets.editTweet', $tweet) }}" method="POST">
         @csrf 
         <label for="username">Title:</label>
         <input class="@error('title') is-invalid @enderror" type="text" id="username" name="title"><br>
@@ -20,7 +20,7 @@
         <div class="alert alert-danger">{{ $message }}</div>
         @enderror
 
-        <button class="submit"type="submit">Create Tweet</button>
+        <button class="submit"type="submit">Edit tweet</button>
     </form>
 
 </div>
