@@ -23,11 +23,22 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <a href="{{ route('feed') }}" class="btn btn tweets-btn">My Tweets</a>
+            <a href="{{ route('feed') }}" class="btn btn tweets-btn @if(Request::is('tweets')) 
+            active
+            @endif">My Tweets</a>
             <a href="{{ route('tweets.create') }}" class="createtweet">Create Tweet</a>
           </div>
         </div>
       </nav>
+
+      <footer class="footer">
+        <div class="logos">
+            <img class="logopic" src="./assets/STZH_SEB_Logo.png">
+            <img class="logopic" src="./assets/Opportunity.png">
+            <img class="logopic" src="./assets/SAG_Logo_De.png">
+        </div>
+      </footer>
+  
 
       @yield('content')
 
