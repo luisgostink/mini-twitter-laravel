@@ -6,7 +6,7 @@
 
 
    {{--action => route // method => POST--}}
-    <form action="{{ route('tweets.editTweet', $tweet) }}" method="POST">
+    <form action="{{ route('tweets.updateTweet', $tweet) }}" method="POST">
         @csrf 
         <label for="username">Title:</label>
         <input class="@error('title') is-invalid @enderror" type="text" id="username" name="title" value="{{$tweet->title}}"><br>
@@ -22,7 +22,7 @@
         <div class="alert alert-danger">{{ $message }}</div>
         @enderror
 
-        <button class="submit"type="submit">Edit tweet</button>
+        <button class="submit"type="submit">Update tweet</button>
     </form>
 
 </div>

@@ -58,10 +58,17 @@ class TweetController extends Controller
         'tweet'=> $tweet
     ]);
 
+    }
 
+    public function updateTweet(Request $request, $id){
+        
+        $tweet = Tweet::find($id); 
+        $tweet->title = $request->title;
+        $tweet->text = $request->text;
+        $tweet->update(); 
 
-    // Go back to the feed page. 
-    return redirect()->route('feed'); // Redirect to the tweets feed
+        // Go back to the feed page. 
+        return redirect()->route('feed'); // Redirect to the tweets feed
     }
     
 
