@@ -49,17 +49,16 @@ class TweetController extends Controller
 
     }
 
- /*    // Edit Tweet = Get the tweet from the database and show it in the page. 
-    public function editTweet(){
-        dd('whatev');
+  // Edit Tweet = Get the tweet from the database and show it in the page. 
+    public function editTweet($id){
     
-        // Get tweet from the DB and saves it in the $tweet variable. 
+// Get tweet from the DB and saves it in the $tweet variable. 
     $tweet = Tweet::find($id); 
     $tweet->editTweet();
 
     // Go back to the feed page. 
     return redirect()->route('feed'); // Redirect to the tweets feed
-    }  */
+    }
     
 
     // Show selected tweet, getting the ID from the database. 

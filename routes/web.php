@@ -28,7 +28,7 @@ Route::post('tweets/store', [TweetController::class, 'store'])->name('tweets.sto
 
 Route::delete('tweets/{id}', [TweetController::class, 'destroy'])->name('tweets.destroy');
 
-Route::get('tweets/editTweet{id}', [TweetController::class, 'editTweet'])->name('tweets.editTweet');
+Route::get('tweets/editTweet/{id}', [TweetController::class, 'editTweet'])->name('tweets.editTweet');
 
 
 
