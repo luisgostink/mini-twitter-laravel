@@ -30,6 +30,7 @@ Route::delete('tweets/{id}', [TweetController::class, 'destroy'])->name('tweets.
 
 Route::get('tweets/editTweet/{id}', [TweetController::class, 'editTweet'])->name('tweets.editTweet');
 
+Route::post('tweets/updateTweet/{id}', [TweetController::class, 'updateTweet'])->name('tweets.updateTweet');
 
 
 

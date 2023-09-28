@@ -54,7 +54,11 @@ class TweetController extends Controller
     
 // Get tweet from the DB and saves it in the $tweet variable. 
     $tweet = Tweet::find($id); 
-    $tweet->editTweet();
+    return view('tweets.editTweet', [
+        'tweet'=> $tweet
+    ]);
+
+
 
     // Go back to the feed page. 
     return redirect()->route('feed'); // Redirect to the tweets feed
